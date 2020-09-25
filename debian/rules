@@ -1,0 +1,11 @@
+#! /usr/bin/make -f
+
+export DEB_CFLAGS_MAINT_APPEND := -Wall
+export DEB_LDFLAGS_MAINT_APPEND := -Wl,-z,defs
+
+%:
+	dh $@ --with=autoreconf
+
+override_dh_auto_build:
+	dh_auto_build
+	docbook-to-man debian/fatresize.sgml > debian/fatresize.1

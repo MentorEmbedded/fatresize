@@ -1,0 +1,5 @@
+This source package uses git-dpm for patch management.  See:
+
+  https://wiki.debian.org/PackagingWithGit/GitDpm
+  http://git-dpm.alioth.debian.org/
+  git-dpm(1)

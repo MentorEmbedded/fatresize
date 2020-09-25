@@ -1,0 +1,21 @@
+Source: fatresize
+Section: otherosfs
+Priority: optional
+Maintainer: Parted Maintainer Team <parted-maintainers@lists.alioth.debian.org>
+Uploaders: Philippe Coval <rzr@gna.org>, Colin Watson <cjwatson@debian.org>
+Build-Depends: debhelper (>= 9~), dh-autoreconf, libparted0-dev (>= 2.2) | libparted-dev, uuid-dev, docbook-to-man, docbook-utils, pkg-config
+Standards-Version: 3.9.5
+Homepage: http://sf.net/projects/fatresize
+Vcs-Git: git://anonscm.debian.org/parted/debian/fatresize.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=parted/debian/fatresize.git
+
+Package: fatresize
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Suggests: dosfstools
+Description: FAT16/FAT32 filesystem resizer
+ Fatresize is a command line tool for non-destructive resizing of FAT16/FAT32
+ partitions.
+ .
+ It is based on the GNU Parted library. The main target of the project is to be
+ used with the EVMS FAT plugin.

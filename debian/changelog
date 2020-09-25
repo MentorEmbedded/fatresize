@@ -1,0 +1,92 @@
+fatresize (1.1.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+  * Avoid assert when resizing to exactly the available space
+  * Respect the -n command line parameter
+
+ -- Joe MacDonald <joe_macdonald@mentor.com>  Fri, 25 Sep 2020 10:02:20 -0400
+
+fatresize (1.0.2-7) unstable; urgency=medium
+
+  * Convert to git-dpm.
+  * Convert to dh-autoreconf, making pkg-config.patch a tiny fraction of its
+    former size.
+  * Drop unnecessary XSBC-Original-Maintainer line; Philippe is still in
+    Uploaders.
+  * Update Vcs-* to current canonical URLs.
+  * Upgrade to debhelper v9, using dh(1).
+  * Policy version 3.9.5.
+  * Support libparted 3.1.
+
+ -- Colin Watson <cjwatson@debian.org>  Sat, 12 Jul 2014 15:50:06 +0100
+
+fatresize (1.0.2-6) unstable; urgency=low
+
+  * Removing myself from uploaders, i landed there by accident
+    (Closes: #575362).
+
+ -- Daniel Baumann <daniel@debian.org>  Sun, 18 Apr 2010 04:58:18 +0200
+
+fatresize (1.0.2-5) unstable; urgency=low
+
+  * Maintenance done using git on alioth
+  * Set Maintainer to Parted Maintainer Team
+  * Update standards, fix lintian warnings
+
+ -- Philippe Coval <rzr@gna.org>  Fri, 12 Mar 2010 23:45:43 +0100
+
+fatresize (1.0.2-4ubuntu2) lucid; urgency=low
+
+  * Build against parted 2.2.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Tue, 09 Mar 2010 00:49:23 +0000
+
+fatresize (1.0.2-4ubuntu1) lucid; urgency=low
+
+  * Build against parted 2.1.
+  * Use pkg-config to check for libparted, rather than a home-grown macro
+    that fails to parse 2.1 as a version string.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Fri, 26 Feb 2010 17:49:46 +0000
+
+fatresize (1.0.2-4) unstable; urgency=low
+
+  * debian/control:
+    - Bumped strandards version to current ones
+    - updated maintainer email
+  * debian/rules:
+    - uses quilt for patches (Closes: #533963)
+  * debian/fatresize.sgml:
+    - updated maintainer email
+
+ -- Philippe Coval <rzr@gna.org>  Tue, 21 Jul 2009 20:34:15 +0200
+
+fatresize (1.0.2-3ubuntu1) karmic; urgency=low
+
+  * Use free instead of ped_free, which no longer exists in current parted
+    (see Debian #533963).
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Wed, 15 Jul 2009 13:11:24 +0100
+
+fatresize (1.0.2-3) unstable; urgency=low
+
+  * debian/control:
+    - Migrated to libparted18-dev  (Closes: #489087)
+    - Bumped strandards version to current one
+  * debian/copyright, debian/watch: Minor indentation fixes
+  * debian/rules: update config.{sub,guess} during configure, remove on clean
+  * debian/fatresize.sgml: corrected author's fields
+
+ -- Philippe Coval <rzr@users.sf.net>  Mon, 30 Jun 2008 19:33:23 +0200
+
+fatresize (1.0.2-2) unstable; urgency=low
+
+  * Fixed watch file, removed uploader as requested
+
+ -- Philippe Coval <rzr@users.sf.net>  Mon, 22 Jan 2007 00:59:01 +0100
+
+fatresize (1.0.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #354460)
+
+ -- Philippe Coval <rzr@users.sf.net>  Sat, 25 Nov 2006 17:58:28 +0100
