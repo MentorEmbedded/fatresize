@@ -1,3 +1,10 @@
+fatresize (1.1.0-1+ind1) UNRELEASED; urgency=medium
+
+  * debian/changelog:
+    - append "+ind1" to upstream version
+
+ -- Venkatasaiganesh Deety <venakatasaiganesh_deety@mentor.com>  Wed, 10 Feb 2021 10:15:42 +0530
+
 fatresize (1.1.0-1) UNRELEASED; urgency=medium
 
   * New upstream release
